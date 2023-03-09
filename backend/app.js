@@ -83,7 +83,7 @@ app.use("/api/v2",cart);
 app.use(express.static(path.join(__dirname, "Puble")));
 
 app.get("*",(req,res) =>{
-    res.sendFile(path.resolve(__dirname, "index.html"));
+    res.sendFile(path.resolve(__dirname, "Puble/index.html"));
 }) 
  
 // it's for errorHandeling
